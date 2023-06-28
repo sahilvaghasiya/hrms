@@ -77,11 +77,6 @@ export class LogInUserDto {
 
 export class ChangePasswordDto {
   @ApiProperty()
-  @IsEmail()
-  @IsNotEmpty()
-  email: string;
-
-  @ApiProperty()
   @IsString()
   @IsNotEmpty()
   @Matches(
